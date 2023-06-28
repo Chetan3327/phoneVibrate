@@ -7,13 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="vibrate()">click</button>
+    <button onclick="vibrate()">clickton>
+
+clickkk</button>
+    <button onclick="stop()">Stop</button>
 </body>
 <script>
-    function vibrate(){
-        if (navigator.vibrate) {
-            window.navigator.vibrate(200);
-        }
+    window.onload = function(){
+        //navigator.vibrate(5000)
+        navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100])
+    }   
+    function stop(){
+        navigator.viibrate(0)
     }
 </script>
 </html>
